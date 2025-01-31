@@ -1,150 +1,163 @@
 :root {
-    --primary-color: #2E2F42;
-    --secondary-color: #434455;
-    --accent-color: #FF6B08;
-    --light-color: #F4F4FD;
-    --dark-color: #000000;
-    --white-color: #FFFFFF;
+  --primary-color: #2E2F42;
+  --secondary-color: #434455;
+  --accent-color: #FF6B08;
+  --light-color: #F4F4FD;
+  --dark-color: #000000;
+  --white-color: #FFFFFF;
 }
 
 body {
-    color: var(--primary-color);
-    background-color: var(--light-color);
-    font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  line-height: 1.5; /* Встановлюємо коефіцієнт для line-height */
 }
 
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("../fonts/Roboto-Black.ttf");
+}
+
+/* Стилізація кнопок */
 .btn {
-    background-color: var(--accent-color);
-    color: var(--white-color);
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
-@font-face{
-    font-family: "Roboto";
-    font-weight: 400;
-    src: url("../fonts/Roboto-Regular.ttf");
-}
-@font-face{
-    font-family: "Roboto";
-    font-weight: 500;
-    src: url("../fonts/Roboto-Medium.ttf");
-}
-@font-face{
-    font-family: "Roboto";
-    font-weight: 700;
-    src: url("../fonts/Roboto-Bold.ttf");
-}
-@font-face{
-    font-family: "Roboto";
-    font-weight: 900;
-    src: url("../fonts/Roboto-Black.ttf");
-}
-body {
-    font-family: "Roboto", sans-serif;
-  }
-
-  /* Встановлюємо шрифт для всього сайту */
-body {
-    font-family: 'Inter', sans-serif; /* Виносимо font-family для всього сайту */
-    line-height: 1.5; /* Встановлюємо коефіцієнт для line-height */
-  }
-  
-  /* Стилізація заголовків */
-  h1, h2, h3 {
-    line-height: 1.2; /* Коефіцієнт для заголовків */
-  }
-  
-  /* Стилізація абзаців */
-  p {
-    line-height: 1.6; /* Коефіцієнт для абзаців */
-  }
-  
-  /* Стилізація списків */
-  ul, ol {
-    line-height: 1.6; /* Коефіцієнт для списків */
-  }
-  
-  /* Стилізація кнопок */
-  button {
-    line-height: 1.4; /* Коефіцієнт для кнопок */
-  }
-  
-  /* Інші елементи можуть мати свої окремі налаштування для line-height */
-
-  
-  /* reset.css */
+/* reset.css */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Основні стилі */
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Стиль для елемента із Завдання 2 */
-  .custom-element {
-    width: 350px;
-    height: 220px;
-    padding: 15px 10px 20px 10px; /* внутрішні відступи */
-    margin-bottom: 30px; /* зовнішній нижній відступ */
-    border: 2px dotted red; /* пунктирна червона границя */
-    background-color: green; /* зелений фон */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Основні стилі для кнопок навігації */
+/* Основні стилі */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Стиль для елемента із Завдання 2 */
+.custom-element {
+  width: 350px;
+  height: 220px;
+  padding: 15px 10px 20px 10px; /* внутрішні відступи */
+  margin-bottom: 30px; /* зовнішній нижній відступ */
+  border: 2px dotted red; /* пунктирна червона границя */
+  background-color: green; /* зелений фон */
+}
+
+/* Основні стилі для кнопок навігації */
 .nav-button {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    margin-right: 10px;
-    cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .nav-button:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
+}
+
+.nav-button:active {
+  background-color: #d0d0d0;
+}
+
+.nav-button:focus {
+  outline: 2px solid #FF6B08; /* Колір фокусу */
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .post-item {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .container {
+      padding: 0 15px;
+  }
+
+  .nav-button {
+      width: 100%;
+  }
 }
 
 /* Стилі для карток постів */
 .post-item {
-    display: inline-block;
-    width: 30%;
-    margin: 15px;
-    box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  box-sizing: border-box;
 }
 
 .post-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .post-title {
-    font-size: 1.2em;
-    font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .post-subtitle {
-    font-size: 1em;
-    color: #555;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Завдання 1: Стилізація контейнера */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Встановіть максимальну ширину */
+  margin: 0 auto; /* Центрування контейнера */
+  padding: 0 20px; /* Відступи з боків */
+}
+
+/* Завдання 2: Відступи для секцій */
+section {
+  padding-top: 40px; /* Відступ зверху */
+  padding-bottom: 40px; /* Відступ знизу */
+}
+
+/* Завдання 3: Стилізований елемент */
+.styled-element-section {
+  background-color: #f4f4f4; /* Колір фону */
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .styled-element {
-  width: 350px;
-  height: 220px;
-  padding-top: 15px;
-  padding-left: 10px;
-  padding-bottom: 20px;
-  padding-right: 10px;
-  margin-bottom: 30px;
-  border: 2px dashed red;
-  background-color: green;
+  background-color: #fff; /* Фон для елемента */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Контейнер для усіх елементів */
-.container {
-  width: 100%; /* Ширина на всю доступну ширину */
-  max-width: 1200px; /* Максимальна ширина контейнера */
-  margin: 0 auto; /* Центрування контейнера по горизонталі */
-  padding: 0 15px; /* Відступи зліва і справа */
+.styled-element p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 0;
 }
