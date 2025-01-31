@@ -129,4 +129,22 @@ body {
     color: #555;
 }
 
-  
+.styled-element {
+  width: 350px;
+  height: 220px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  border: 2px dashed red;
+  background-color: green;
+}
+
+/* Контейнер для усіх елементів */
+.container {
+  width: 100%; /* Ширина на всю доступну ширину */
+  max-width: 1200px; /* Максимальна ширина контейнера */
+  margin: 0 auto; /* Центрування контейнера по горизонталі */
+  padding: 0 15px; /* Відступи зліва і справа */
+}
