@@ -69,4 +69,64 @@ body {
   }
   
   /* Інші елементи можуть мати свої окремі налаштування для line-height */
+
+  
+  /* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Основні стилі */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Стиль для елемента із Завдання 2 */
+  .custom-element {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px; /* внутрішні відступи */
+    margin-bottom: 30px; /* зовнішній нижній відступ */
+    border: 2px dotted red; /* пунктирна червона границя */
+    background-color: green; /* зелений фон */
+  }
+
+  /* Основні стилі для кнопок навігації */
+.nav-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Стилі для карток постів */
+.post-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+.post-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.post-subtitle {
+    font-size: 1em;
+    color: #555;
+}
+
   
