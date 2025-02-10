@@ -166,3 +166,9 @@ body {
   text-decoration: none;
   color: var(--white-color);
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
