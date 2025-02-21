@@ -9,7 +9,6 @@
 
 body {
   color: var(--primary-color);
-  background-color: var(--light-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -42,7 +41,11 @@ body {
 body {
   font-family: "Roboto", sans-serif;
 }
-
+.container.header-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .container{
   max-width: 1170px;
   margin: 0 auto;
@@ -59,6 +62,7 @@ body {
 }
 .main-section{
   background-color: var(--primary-color);
+  padding: 200px 0;
 }
 
 .features-list{
@@ -115,12 +119,26 @@ body {
   text-align: center;
   color: var(--dark-color)
 }
+ul.our-works-list{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li.features-list-item{
+  width: 270px;
+}
+.features-list{
+list-style: none;
+padding: 0;
+}
 .our-works-list{
   list-style: none;
   display: flex;
 }
 .team{
   background-color: var(--light-color);
+  padding: 94px 0;
 }
 .team-section-title{
   font-size: 36px;
@@ -166,9 +184,31 @@ body {
   text-decoration: none;
   color: var(--white-color);
 }
-
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.team-members {
+  display: flex;  
+  justify-content: space-between;  
+  margin: 0; 
+}
+.team-wrap{
+  margin: 0;
+  width: 270px;
+}
+.team-img{
+  width: 100%;
+}
+nav.team {
+  position: relative;
+  left: -115px;
+}
+.class-sub:not(:last-child) {
+  margin-right: 8px;
+}
+figure.section-figure {
+  border: 1px solid black;
+}
+

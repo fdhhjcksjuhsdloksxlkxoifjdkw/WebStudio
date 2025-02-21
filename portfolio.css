@@ -121,3 +121,29 @@ body{
     text-decoration: none;
     color: var(--white-color);
 }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .post-item-wrap{
+    width: 370px;
+    text-align: center;
+  }
+  .posts-section-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+}
+.post-item {
+    flex: 1 1 calc(33.33% - 20px); 
+    box-sizing: border-box;
+}
+.post-item-wrap {
+    text-align: center; 
+}
+.post-img {
+    max-width: 100%; 
+    height: auto; 
+}
