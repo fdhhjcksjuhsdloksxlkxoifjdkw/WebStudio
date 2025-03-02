@@ -6,17 +6,14 @@
   --sky: #2196f3;
   --grey: #757575;
 }
-
 body {
   color: var(--primary-color);
   font-family: "Roboto", sans-serif;
 }
-
 .btn {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -37,7 +34,6 @@ body {
   font-weight: 900;
   src: url("../fonts/Roboto-Black.ttf");
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -46,12 +42,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.section.our-works-section{
+  padding: 50px 0; 
+ }
+.main-section-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .container{
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
 .main-text{
   color: white;
   font-size: 44px;
@@ -59,15 +63,22 @@ body {
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
+  width: 60%;
 }
 .main-section{
   background-color: var(--primary-color);
   padding: 200px 0;
 }
-
 .features-list{
   list-style: none;
   display: flex;
+  justify-content: space-between;
+}
+.address {
+  display: flex;
+  gap: 30px; 
+  align-items: center;
+  margin-left: auto; /* Відсуває контакти вправо */
 }
 .nav-link{
   font-size: 14px;
@@ -124,7 +135,6 @@ ul.our-works-list{
   display: flex;
   justify-content: space-between;
 }
-
 li.features-list-item{
   width: 270px;
 }
@@ -161,6 +171,7 @@ padding: 0;
 }
 .footer{
   background-color: var(--primary-color);
+  padding: 50px 0;
 }
 .footer-address{
   font-size: 14px;
@@ -188,6 +199,25 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px 0;
+}
+.nav-list {
+  display: flex;
+  gap: 50px; /* Додає більше простору між пунктами меню */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-link {
+  font-size: 16px; /* Зробити текст більш читабельним */
+  font-weight: 500;
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--sky);
 }
 .team-members {
   display: flex;  
@@ -211,4 +241,84 @@ nav.team {
 figure.section-figure {
   border: 1px solid black;
 }
+.logo {
+  margin-right: 50px;
+}
+.our-works-title, .team-section-title {
+  margin-bottom: 30px;
+}
+.features-list, .our-works-list {
+  gap: 30px;
+}
+.address-email {
+  margin-right: 20px; /* Додає відступ між email та телефоном */
+}
+.header-nav-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  list-style: none;
+  margin: 0;
+}
 
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--sky);
+}
+
+.address {
+  display: flex;
+  gap: 40px; /* Збільшуємо відстань між email і телефоном */
+  align-items: center;
+  margin-left: auto;
+}
+
+.address-email,
+.address-phone {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-color);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-email:hover,
+.address-phone:hover {
+  color: var(--sky);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-color);
+  display: flex;
+  align-items: center; /* Вирівнюємо логотип по центру */
+}
+
+.logo span {
+  color: var(--sky);
+}
+.main-button {
+  background-color: #007bff; /* Колір фону кнопки */
+  border: none; /* Видалення облямівки кнопки */
+  color: white; /* Колір тексту кнопки */
+  padding: 10px 20px; /* Внутрішні відступи кнопки */
+  text-align: center; /* Вирівнювання тексту по центру */
+  text-decoration: none; /* Видалення підкреслення тексту */
+  display: inline-block; /* Відображення кнопки як блочного елемента */
+  font-size: 16px; /* Розмір шрифту тексту */
+  border-radius: 5px; /* Заокруглення кутів кнопки */
+  cursor: pointer; /* Зміна курсору при наведенні на кнопку */
+}
+
+.main-button:hover {
+  background-color: #0069d9; /* Зміна кольору фону при наведенні */
+}

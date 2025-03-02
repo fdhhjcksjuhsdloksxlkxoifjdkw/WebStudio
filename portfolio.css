@@ -6,6 +6,14 @@
     --sky: #2196f3;
     --grey: #757575;
   }
+  body {
+    color: var(--primary-color);
+    font-family: "Roboto", sans-serif;
+  }
+  .btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
   @font-face{
     font-family: "Roboto";
     font-weight: 400;
@@ -29,6 +37,20 @@
 body{
     font-family: "Roboto", sans-serif;
 }
+.container.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section.our-works-section{
+    padding: 50px 0; 
+   }
+  .main-section-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -41,14 +63,23 @@ body{
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
+    width: 60%;
 }
 .main-section{
     background-color: var(--primary-color);
+    padding: 200px 0;
 }
-.nav-list{
+.features-list{
     list-style: none;
     display: flex;
-}
+    justify-content: space-between;
+  }
+  .address {
+    display: flex;
+    gap: 30px; 
+    align-items: center;
+    margin-left: auto; /* Відсуває контакти вправо */
+  }
 .nav-link{
     font-size: 14px;
     font-weight: 400;
@@ -126,24 +157,113 @@ body{
     justify-content: space-around;
     align-items: center;
   }
-  .post-item-wrap{
-    width: 370px;
-    text-align: center;
-  }
-  .posts-section-list {
+.posts-section-list {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: space-between; 
+    flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок */
+    gap: 30px;
+    justify-content: center;
+  }
+  .post-item {
+    width: calc(33.333% - 20px); /* Три колонки, враховуючи відступи */
+  }
+.posts-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 65px;
+    row-gap: 130px;
 }
-.post-item {
-    flex: 1 1 calc(33.33% - 20px); 
-    box-sizing: border-box;
+.post-img{
+    width: 100%;
 }
-.post-item-wrap {
-    text-align: center; 
-}
-.post-img {
-    max-width: 100%; 
-    height: auto; 
-}
+.logo {
+    margin-right: 50px;
+  }
+  .our-works-title, .team-section-title {
+    margin-bottom: 30px;
+  }
+  .features-list, .our-works-list {
+    gap: 30px;
+  }
+  .address-email {
+    margin-right: 20px; /* Додає відступ між email та телефоном */
+  }
+  .header-nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: var(--sky);
+  }
+  
+  .address {
+    display: flex;
+    gap: 40px; /* Збільшуємо відстань між email і телефоном */
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .address-email,
+  .address-phone {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  .address-email:hover,
+  .address-phone:hover {
+    color: var(--sky);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center; /* Вирівнюємо логотип по центру */
+  }
+  
+  .logo span {
+    color: var(--sky);
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Додає трохи простору зверху */
+  }
+  
+  .nav-button {
+    background-color: #e0e0e0;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .nav-button{
+    background-color: #007aff;
+    color: white;
+  }
