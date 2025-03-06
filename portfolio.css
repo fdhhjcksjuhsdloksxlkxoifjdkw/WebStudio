@@ -132,12 +132,12 @@ body{
 }
 .footer{
     background-color: var(--primary-color);
+    padding: 50px 0;
 }
 .footer-address{
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 3%;
     color: var(--white-color);
     line-height: 1.71;
 }
@@ -162,9 +162,12 @@ body{
     flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок */
     gap: 30px;
     justify-content: center;
+    padding: 0;
+    margin-bottom: 94px;
+    margin-top: 40px;
   }
   .post-item {
-    width: calc(33.333% - 20px); /* Три колонки, враховуючи відступи */
+   flex-basis: calc((100% - 60px) / 3);
   }
 .posts-wrapper{
     display: flex;
@@ -197,7 +200,6 @@ body{
     list-style: none;
     margin: 0;
   }
-  
   .nav-link {
     font-size: 16px;
     font-weight: 500;
@@ -205,18 +207,15 @@ body{
     text-decoration: none;
     transition: color 0.3s ease-in-out;
   }
-  
   .nav-link:hover {
     color: var(--sky);
   }
-  
   .address {
     display: flex;
     gap: 40px; /* Збільшуємо відстань між email і телефоном */
     align-items: center;
     margin-left: auto;
   }
-  
   .address-email,
   .address-phone {
     font-size: 14px;
@@ -225,12 +224,10 @@ body{
     text-decoration: none;
     font-style: normal;
   }
-  
   .address-email:hover,
   .address-phone:hover {
     color: var(--sky);
   }
-  
   .logo {
     font-size: 24px;
     font-weight: 700;
@@ -238,7 +235,6 @@ body{
     display: flex;
     align-items: center; /* Вирівнюємо логотип по центру */
   }
-  
   .logo span {
     color: var(--sky);
   }
@@ -248,7 +244,6 @@ body{
     align-items: center;
     margin-top: 20px; /* Додає трохи простору зверху */
   }
-  
   .nav-button {
     background-color: #e0e0e0;
     border: none;
@@ -262,8 +257,14 @@ body{
     cursor: pointer;
     border-radius: 5px;
   }
-  
-  .nav-button{
+  .nav-button:hover{
     background-color: #007aff;
     color: white;
+  }
+  figure.post-item-wrap {
+     margin: 0;
+     border: 1px solid #EEEEEE;
+  }
+  figure.post-text {
+    padding-left: 20px;
   }
