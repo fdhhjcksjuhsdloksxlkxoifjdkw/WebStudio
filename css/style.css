@@ -169,6 +169,61 @@ padding: 0;
   font-weight: 400;
   color: var(--grey);
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #afb1b8;
+  transition: fill 0.3s ease;
+}
+.social-icon:hover {
+  fill: #2196f3;
+}
+.clients {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 30px;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.client-item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, fill 0.3s ease;
+  fill: #afb1b8;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
 .footer{
   background-color: var(--primary-color);
   padding: 50px 0;
@@ -193,6 +248,42 @@ padding: 0;
 .footer-tel{
   text-decoration: none;
   color: var(--white-color);
+}
+.social-footer {
+  margin-top: 40px;
+}
+.footer-social-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
+}
+.footer-icon {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
 }
 nav {
   display: flex;
@@ -311,4 +402,28 @@ figure.section-figure {
 }
 .main-button:hover {
   background-color: #0069d9; 
+}
+.features-list-item:nth-child(1) {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px; 
+}
+.features-list-item:nth-child(2) {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px;
+}
+.features-list-item:nth-child(3) {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px;
+}
+.features-list-item:nth-child(4) {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 150px;
 }
