@@ -1,29 +1,15 @@
-<script>
-  const openBtn = document.querySelector('.main-button');
-  const closeBtn = document.getElementById('modal-close');
-  const modal = document.getElementById('modal');
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
 
-  // Відкриття модального вікна
-  openBtn.addEventListener('click', () => {
-    modal.classList.remove('is-hidden');
-  });
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  // Закриття при натисканні на хрестик
-  closeBtn.addEventListener('click', () => {
-    modal.classList.add('is-hidden');
-  });
-
-  // Закриття при натисканні на фон (backdrop)
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.add('is-hidden');
-    }
-  });
-
-  // Закриття по Esc
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      modal.classList.add('is-hidden');
-    }
-  });
-</script>
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("no-scroll");
+  }
+})();
