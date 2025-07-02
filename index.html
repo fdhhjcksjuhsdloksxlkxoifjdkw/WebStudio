@@ -49,21 +49,40 @@
             <button type="button" class="modal-close-btn" id="modal-close" data-modal-close>
               &times;
             </button>
-            <h2>Залиште свої дані</h2>
+            <h2 class="modal__label">Залиште свої дані,ми вам передзвонимо</h2>
             <form class="modal-form">
-              <label>
-                Ім’я<br>
-                <input type="text" name="name" required>
-              </label><br><br>
-              <label>
-                Телефон<br>
-                <input type="tel" name="phone" required>
-              </label><br><br>
-              <label>
-                Email<br>
-                <input type="email" name="email" required>
-              </label><br><br>
-              <button type="submit">Надіслати</button>
+              <div class="form__group" role="group">
+              <label class="modal-label" for="user-name">Ім’я</label>
+              <div class="form-field">
+                <svg class="form-icon">
+                  <use href="" ></use>
+            </svg>
+                <input type="text" name="name" class="modal-input" id="user-name" required>
+              </div>
+              </div>
+                </label>
+                <label class="modal-label">Телефон</label>
+                 <div class="form-field">
+                <svg class="form-icon">
+                  <use href="" ></use>
+            </svg>
+                <input type="tel" name="phone" class="modal-input" id="user-phone" required>
+          </div>
+                <label class="modal-label">Пошта</label>
+                  <div class="form-field">
+                <svg class="form-icon">
+                  <use href="" ></use>
+            </svg>
+                  <input type="email" name="email" class="modal-input" required>
+                 </div>
+                <label class="form__label" for="user_message">Коментар</label>
+                <textarea class="form__message" name="user_message" id="user_message"
+
+                  placeholder="Введіть текст"></textarea>
+                <div class="form__agreement" role="group"></div>
+                <label class="agreement__desc" for="user_agreement"></label>
+
+                <button type="submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -104,21 +123,21 @@
         <ul class="our-works-list">
           <li class="our-works-item">
             <div class="our-works-thumb">
-            <img src="img/box1.jpg" class="portfolio-item" alt="Box image">
-            <p class="our-works-label">ДЕСКТОПНІ ДОДАТКИ</p>
+              <img src="img/box1.jpg" class="portfolio-item" alt="Box image">
+              <p class="our-works-label">ДЕСКТОПНІ ДОДАТКИ</p>
             </div>
           </li>
           <li class="our-works-item">
             <div class="our-works-thumb">
-            <img src="img/img.png" class="portfolio-item" alt="Sample work 1">
-            <p class="our-works-label">МОБІЛЬНІ ДОДАТКИ</p>
+              <img src="img/img.png" class="portfolio-item" alt="Sample work 1">
+              <p class="our-works-label">МОБІЛЬНІ ДОДАТКИ</p>
             </div>
           </li>
           <div class="our-works-thumb">
-          <li class="our-works-item">
-            <img src="img/img(1).png" class="portfolio-item" alt="Sample work 2">
-            <p class="our-works-label">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
-            </div>
+            <li class="our-works-item">
+              <img src="img/img(1).png" class="portfolio-item" alt="Sample work 2">
+              <p class="our-works-label">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+          </div>
           </li>
         </ul>
       </div>
@@ -304,4 +323,5 @@
   </footer>
   <script type="module" src="./index.js"></script>
 </body>
+
 </html>
